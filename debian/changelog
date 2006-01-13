@@ -1,0 +1,48 @@
+xserver-xorg-input-elographics (1:1.0.0.5-1) UNRELEASED; urgency=low
+
+  * First upload to Debian
+
+ -- David Nusinow <dnusinow@debian.org>  Fri, 13 Jan 2006 00:30:49 -0500
+
+xserver-xorg-input-elographics (1:1.0.0.5-0ubuntu1) dapper; urgency=low
+
+  * New upstream release.
+  * Add provides on xserver-xorg-input.
+
+ -- David Nusinow <dnusinow@debian.org>  Fri, 13 Jan 2006 00:28:19 -0500
+
+xserver-xorg-input-elographics (1:1.0.0.4-0ubuntu1) dapper; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 19 Dec 2005 08:55:12 +1100
+
+xserver-xorg-input-elographics (1:1.0.0.3-0ubuntu1) dapper; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon, 12 Dec 2005 13:37:35 +1100
+
+xserver-xorg-input-elographics (1:1.0.0.2-0ubuntu2) dapper; urgency=low
+
+  * Add missing Build-Depends (x11proto-core-dev, x11proto-randr-dev).
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Mon,  5 Dec 2005 12:47:32 +1100
+
+xserver-xorg-input-elographics (1:1.0.0.2-0ubuntu1) dapper; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Tue, 22 Nov 2005 13:20:51 +1100
+
+xserver-xorg-input-elographics (1:1.0.0.1-1) dapper; urgency=low
+
+  * New upstream release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Tue, 25 Oct 2005 16:52:31 +1000
+
+xserver-xorg-input-elographics (1:1.0.0-1) breezy; urgency=low
+
+  * First xserver-xorg-input-elographics release.
+
+ -- Daniel Stone <daniel.stone@ubuntu.com>  Wed,  6 Jul 2005 15:48:17 +1000
