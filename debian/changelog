@@ -4,17 +4,19 @@ xserver-xorg-input-elographics (1:1.1.0-2) UNRELEASED; urgency=low
   * Add link to xserver-xorg-core bug script, so that bugreports contain
     the user's config and log files.
   * Generate the dependency on xserver-xorg-core automatically.
+  * Build against xserver 1.4.
+  * Generate the Provides field automatically.
+  * Add myself to Uploaders, and remove Branden with his permission.
+  * Add upstream URL to debian/copyright.
 
   [ Brice Goglin ]
   * Install the upstream changelog.
-  * Bump Build-Depends: xserver-xorg-dev to >= 2:1.2.99.902
-    (needed to let xsfbs get access to serverminver).
   * Add XS-Vcs-*.
   * Add a link to www.X.org and a reference to the xf86-input-elographics
     module in the long description.
   * Remove Fabio from uploaders with his permission. He's always welcome back.
 
- -- Brice Goglin <Brice.Goglin@ens-lyon.org>  Tue, 24 Apr 2007 23:33:22 +0200
+ -- Julien Cristau <jcristau@debian.org>  Wed, 12 Sep 2007 16:26:33 +0200
 
 xserver-xorg-input-elographics (1:1.1.0-1) unstable; urgency=low
 
