@@ -1,7 +1,6 @@
 xserver-xorg-input-elographics (1:1.2.0-1) UNRELEASED; urgency=low
 
   * New upstream release.
-  * Build against xserver 1.5 rc1.
   * Bump Standards-Version to 3.7.3.
   * Drop the XS- prefix from Vcs-* control fields.
 
