@@ -1,3 +1,17 @@
+commit 174a043bbad20de2959cc08736f894ef56536ece
+Author: Adam Jackson <ajax@redhat.com>
+Date:   Wed May 21 15:00:44 2008 -0400
+
+    elographics 1.2.1
+
+commit 0133d754c10341ca5b572beeee72488b8f5ae8a8
+Author: Peter Hutterer <peter@cs.unisa.edu.au>
+Date:   Thu May 1 12:03:44 2008 +0930
+
+    Don't divide by zero. #14902
+    
+    X.Org Bug 14902 <http://bugs.freedesktop.org/show_bug.cgi?id=14902>
+
 commit d639f87a52aac179ef9d0908c012e79baf5fa245
 Author: Adam Jackson <ajax@redhat.com>
 Date:   Thu Mar 20 15:30:00 2008 -0400

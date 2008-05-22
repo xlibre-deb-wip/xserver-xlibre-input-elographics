@@ -1,4 +1,4 @@
-xserver-xorg-input-elographics (1:1.2.0-1) UNRELEASED; urgency=low
+xserver-xorg-input-elographics (1:1.2.1-1) UNRELEASED; urgency=low
 
   * New upstream release.
   * Bump Standards-Version to 3.7.3.
