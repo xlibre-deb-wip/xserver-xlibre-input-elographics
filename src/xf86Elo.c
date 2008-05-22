@@ -57,9 +57,10 @@
 
 #ifdef XFREE86_V4
 
+#ifndef XFree86LOADER
 #include <unistd.h>
 #include <errno.h>
-#include <string.h>
+#endif
 
 #include "misc.h"
 #include "xf86.h"
