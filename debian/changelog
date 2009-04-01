@@ -1,4 +1,4 @@
-xserver-xorg-input-elographics (1:1.2.3-1) UNRELEASED; urgency=low
+xserver-xorg-input-elographics (1:1.2.3-1) experimental; urgency=low
 
   [ Timo Aaltonen ]
   * New upstream release.
@@ -8,7 +8,7 @@ xserver-xorg-input-elographics (1:1.2.3-1) UNRELEASED; urgency=low
   [ Julien Cristau ]
   * Build against xserver >= 1.6 rc1.
 
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Thu, 26 Feb 2009 17:52:10 +0200
+ -- Julien Cristau <jcristau@debian.org>  Wed, 01 Apr 2009 18:59:46 +0200
 
 xserver-xorg-input-elographics (1:1.2.1-1) unstable; urgency=low
 
