@@ -1,3 +1,9 @@
+xserver-xorg-input-elographics (1:1.2.3-3) UNRELEASED; urgency=low
+
+  * Bump Standards-Version to 3.8.3.
+
+ -- Timo Aaltonen <tjaalton@ubuntu.com>  Mon, 30 Nov 2009 11:46:08 +0200
+
 xserver-xorg-input-elographics (1:1.2.3-2) unstable; urgency=low
 
   * Allow parallel builds.
