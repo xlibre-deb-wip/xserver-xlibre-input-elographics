@@ -1,4 +1,4 @@
-xserver-xorg-input-elographics (1:1.2.1-1+) UNRELEASED; urgency=low
+xserver-xorg-input-elographics (1:1.2.1-2) stable; urgency=low
 
   * Apply two fixes from upstream:
     - WaitForInput before trying to xf86EloGetPacket.
@@ -6,7 +6,7 @@ xserver-xorg-input-elographics (1:1.2.1-1+) UNRELEASED; urgency=low
     This should prevent the X server from getting stuck when using the
     touchscreen (closes: #523749).
 
- -- Julien Cristau <jcristau@debian.org>  Wed, 10 Jun 2009 23:36:37 +0200
+ -- Julien Cristau <jcristau@debian.org>  Sat, 30 Jan 2010 01:36:23 +0100
 
 xserver-xorg-input-elographics (1:1.2.1-1) unstable; urgency=low
 
