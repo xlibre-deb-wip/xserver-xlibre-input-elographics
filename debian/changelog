@@ -1,4 +1,4 @@
-xserver-xorg-input-elographics (1:1.2.3-3) UNRELEASED; urgency=low
+xserver-xorg-input-elographics (1:1.2.3-3) unstable; urgency=low
 
   [ Timo Aaltonen ]
   * Build against Xserver 1.7.
@@ -12,8 +12,9 @@ xserver-xorg-input-elographics (1:1.2.3-3) UNRELEASED; urgency=low
   * Bump Standards-Version to 3.8.4, no changes needed.
   * Pull from upstream master up to commit ac5366d6.
     + Fix build against Xserver 1.7, closes: #569462.
+  * Add myself to Uploaders.
 
- -- Timo Aaltonen <tjaalton@ubuntu.com>  Sat, 05 Dec 2009 01:49:02 +0200
+ -- Brice Goglin <bgoglin@debian.org>  Mon, 15 Mar 2010 19:21:24 +0100
 
 xserver-xorg-input-elographics (1:1.2.3-2) unstable; urgency=low
 
