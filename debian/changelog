@@ -10,6 +10,8 @@ xserver-xorg-input-elographics (1:1.2.3-3) UNRELEASED; urgency=low
 
   [ Brice Goglin ]
   * Bump Standards-Version to 3.8.4, no changes needed.
+  * Pull from upstream master up to commit ac5366d6.
+    + Fix build against Xserver 1.7, closes: #569462.
 
  -- Timo Aaltonen <tjaalton@ubuntu.com>  Sat, 05 Dec 2009 01:49:02 +0200
 
