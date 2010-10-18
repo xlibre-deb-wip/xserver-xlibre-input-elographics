@@ -1,3 +1,19 @@
+commit 607aed76023e71509b260dc23da7c150c1eff825
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Wed Jun 9 12:18:14 2010 +1000
+
+    elographics 1.2.4
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
+commit ac31d3e2d16f2b037d1c4e42aef76ddbd2fa1d20
+Author: Peter Hutterer <peter.hutterer@who-t.net>
+Date:   Wed Jun 9 12:17:16 2010 +1000
+
+    Remove libcwrappers for malloc and free.
+    
+    Signed-off-by: Peter Hutterer <peter.hutterer@who-t.net>
+
 commit ac5366d6e1f26e6ceef3d062ab7df301d623cf54
 Author: Peter Hutterer <peter.hutterer@who-t.net>
 Date:   Fri Dec 18 08:42:26 2009 +1000
