@@ -1,4 +1,4 @@
-xserver-xorg-input-elographics (1:1.2.4-1) UNRELEASED; urgency=low
+xserver-xorg-input-elographics (1:1.2.4-1) experimental; urgency=low
 
   [ Robert Hooker ]
   * New upstream release.
@@ -6,7 +6,7 @@ xserver-xorg-input-elographics (1:1.2.4-1) UNRELEASED; urgency=low
   [ Cyril Brulebois ]
   * Add myself to Uploaders.
 
- -- Robert Hooker <sarvatt@ubuntu.com>  Mon, 18 Oct 2010 13:58:24 -0400
+ -- Cyril Brulebois <kibi@debian.org>  Fri, 19 Nov 2010 21:48:05 +0100
 
 xserver-xorg-input-elographics (1:1.2.3-5) experimental; urgency=low
 
