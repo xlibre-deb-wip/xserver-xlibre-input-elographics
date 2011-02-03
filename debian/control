@@ -20,7 +20,6 @@ Package: xserver-xorg-input-elographics
 Architecture: any
 Depends: ${shlibs:Depends}, ${misc:Depends}, ${xinpdriver:Depends}
 Provides: ${xinpdriver:Provides}
-Replaces: xserver-xorg (<< 6.8.2-35)
 Description: X.Org X server -- ELOGraphics input driver
  This package provides the driver for ELO Graphics touchscreens.
  .
