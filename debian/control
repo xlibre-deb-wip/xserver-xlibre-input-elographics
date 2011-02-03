@@ -18,8 +18,12 @@ Vcs-Browser: http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-input-elograp
 
 Package: xserver-xorg-input-elographics
 Architecture: any
-Depends: ${shlibs:Depends}, ${misc:Depends}, ${xinpdriver:Depends}
-Provides: ${xinpdriver:Provides}
+Depends:
+ ${shlibs:Depends},
+ ${misc:Depends},
+ ${xinpdriver:Depends},
+Provides:
+ ${xinpdriver:Provides}
 Description: X.Org X server -- ELOGraphics input driver
  This package provides the driver for ELO Graphics touchscreens.
  .
