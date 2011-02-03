@@ -1,3 +1,15 @@
+xserver-xorg-input-elographics (1:1.2.4-2) UNRELEASED; urgency=low
+
+  * Switch to dh:
+    - Use debhelper 8.
+    - Use dh-autoreconf.
+    - Bump xserver-xorg-dev build-dep for dh_xsf_substvars and xsf
+      debhelper sequence.
+    - Specify usr/share/man in .install, remove .manpages accordingly.
+
+
+ -- Cyril Brulebois <kibi@debian.org>  Thu, 03 Feb 2011 04:18:46 +0100
+
 xserver-xorg-input-elographics (1:1.2.4-1) experimental; urgency=low
 
   [ Robert Hooker ]
