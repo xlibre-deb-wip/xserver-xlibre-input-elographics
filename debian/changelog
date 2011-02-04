@@ -1,3 +1,9 @@
+xserver-xorg-input-elographics (1:1.2.99+git20101203.6fd22a9d-0ubuntu1) natty; urgency=low
+
+  * New upstream snapshot.  Fixes build against Xserver 1.10
+
+ -- Christopher James Halse Rogers <chris@cooperteam.net>  Fri, 04 Feb 2011 17:04:09 +1100
+
 xserver-xorg-input-elographics (1:1.2.4-1) experimental; urgency=low
 
   [ Robert Hooker ]
