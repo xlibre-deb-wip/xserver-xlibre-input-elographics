@@ -3,6 +3,7 @@ xserver-xorg-input-elographics (1:1.3.0-1) UNRELEASED; urgency=low
   * New upstream release:
     - Support Xserver 1.10 (Closes: #625114).
   * Bump xserver-xorg-dev build-dep accordingly.
+  * Bump Standards-Version to 3.9.2 (no changes).
 
  -- Cyril Brulebois <kibi@debian.org>  Tue, 28 Jun 2011 11:36:12 +0200
 
