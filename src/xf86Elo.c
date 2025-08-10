@@ -138,7 +138,7 @@ static Model SupportedModels[] =
 /*
  ***************************************************************************
  *
- * Usefull macros.
+ * Useful macros.
  *
  ***************************************************************************
  */
@@ -263,7 +263,7 @@ xf86EloGetPacket(unsigned char	*buffer,
        */
       ErrorF("Elographics: Dropping one byte in an attempt to synchronize: '%c' 0x%X\n",
 	     buffer[0], buffer[0]);
-      memcpy(&buffer[0], &buffer[1], num_bytes-1);
+      memmove(&buffer[0], &buffer[1], num_bytes-1);
     }
     else {
       /*
@@ -359,6 +359,22 @@ xf86EloReadInput(InputInfoPtr	pInfo)
           cur_x = WORD_ASSEMBLY(priv->packet_buf[3], priv->packet_buf[4]);
           cur_y = WORD_ASSEMBLY(priv->packet_buf[5], priv->packet_buf[6]);
           state = priv->packet_buf[2] & 0x07;
+
+          DBG(5, ErrorF("ELO got: x(%d), y(%d), %s\n",
+                      cur_x, cur_y,
+                      (state == ELO_PRESS) ? "Press" :
+			((state == ELO_RELEASE) ? "Release" : "Stream")));
+
+          if (priv->min_y > priv->max_y) {
+            /* inverted y axis */
+            cur_y = priv->max_y - cur_y + priv->min_y;
+          }
+
+          if (priv->min_x > priv->max_x) {
+            /* inverted x axis */
+            cur_x = priv->max_x - cur_x + priv->min_x;
+          }
+
 
           /*
            * Send events.
@@ -676,6 +692,7 @@ xf86EloControl(DeviceIntPtr	dev,
   unsigned char		reply[ELO_PACKET_SIZE];
   Atom btn_label;
   Atom axis_labels[2] = { 0, 0 };
+  int x0, x1, y0, y1;
 
   switch(mode) {
 
@@ -719,17 +736,27 @@ xf86EloControl(DeviceIntPtr	dev,
 	return !Success;
       }
       else {
+
+	/* Correct the coordinates for possibly inverted axis.
+	   Leave priv->variables untouched so we can check for
+	   inversion on incoming events.
+	 */
+	y0 = min(priv->min_y, priv->max_y);
+	y1 = max(priv->min_y, priv->max_y);
+	x0 = min(priv->min_x, priv->max_x);
+	x1 = max(priv->min_x, priv->max_x);
+
 	/* I will map coordinates myself */
 	InitValuatorAxisStruct(dev, 0,
 			       axis_labels[0],
-			       priv->min_x, priv->max_x,
+			       x0, x1,
 			       9500,
 			       0     /* min_res */,
 			       9500  /* max_res */,
 			       Absolute);
 	InitValuatorAxisStruct(dev, 1,
 			       axis_labels[1],
-			       priv->min_y, priv->max_y,
+			       y0, y1,
 			       10500,
 			       0     /* min_res */,
 			       10500 /* max_res */,
@@ -848,6 +875,9 @@ xf86EloControl(DeviceIntPtr	dev,
     DBG(2, ErrorF("Done\n"));
     return Success;
 
+  case DEVICE_ABORT:
+    return Success;
+
   default:
       ErrorF("unsupported mode=%d\n", mode);
       return BadValue;
@@ -910,11 +940,7 @@ xf86EloUninit(InputDriverPtr	drv,
   xf86DeleteInput(pInfo, 0);
 }
 
-static
-#if GET_ABI_MAJOR(ABI_XINPUT_VERSION) >= 18
-const
-#endif
-char *default_options[] = {
+static const char *default_options[] = {
   "BaudRate", "9600",
   "StopBits", "1",
   "DataBits", "8",
