@@ -1,29 +1,30 @@
-Source: xserver-xorg-input-elographics
+Source: xserver-xlibre-input-elographics
 Section: x11
 Priority: optional
-Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
-Uploaders: Cyril Brulebois <kibi@debian.org>
+Maintainer: apebl <a@pebl.cc>
 Build-Depends:
  debhelper (>= 8),
  dh-autoreconf,
  pkg-config,
  quilt,
- xserver-xorg-dev (>= 2:1.10),
+ xserver-xlibre-dev (>= 2:1.10),
  x11proto-input-dev,
  x11proto-core-dev,
  x11proto-randr-dev,
  xutils-dev
 Standards-Version: 3.9.2
-Vcs-Git: git://git.debian.org/git/pkg-xorg/driver/xserver-xorg-input-elographics
-Vcs-Browser: http://git.debian.org/?p=pkg-xorg/driver/xserver-xorg-input-elographics.git
+Vcs-Git: https://github.com/xlibre-deb/xserver-xlibre-input-elographics.git
+Vcs-Browser: https://github.com/xlibre-deb/xserver-xlibre-input-elographics
+Homepage: https://github.com/X11Libre
 
-Package: xserver-xorg-input-elographics
+Package: xserver-xlibre-input-elographics
 Architecture: any
 Depends:
  ${shlibs:Depends},
  ${misc:Depends},
  ${xinpdriver:Depends},
 Provides:
+ xserver-xorg-input-elographics,
  ${xinpdriver:Provides}
 Description: X.Org X server -- ELOGraphics input driver
  This package provides the driver for ELO Graphics touchscreens.
@@ -32,3 +33,5 @@ Description: X.Org X server -- ELOGraphics input driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-input-elographics driver module.
+Conflicts:
+ xserver-xorg-input-elographics,
